@@ -3,14 +3,13 @@ postBox
 
 Business Time-Savers for Outlook
 
-EngCel is an add-in that will ultimately provide extened functionality to make Excel more suitable for Engineering Calculations.
-
-Currently only Outlook 2010 is supported, however it is likely to be atleast partially compatable with older/newer versions.
+Currently only Outlook 2010 is supported, however it is likely to be at least partially compatible with older/newer versions.
 
 
 Installation
 ------------
 
+Unfortunately Microsoft prevents Outlook Macros from easily being shared between systems, you'll therefore need to follow this fairly convoluted route to get it working:
 * From the main Outlook Explorer window click 'New E-mail'
 * From the New Message Window right click on the ribbon, select 'Customize the Ribbon'
 * Hit the 'Import/Export' button on the bottom-right 'Customizations' area, which will open the Outlook Options window
@@ -26,13 +25,13 @@ Usage
 Quick Link
 ----------
 
-Quick link automatically creates a link from the highlighted text- useful for providing links to files on shared networks, which Outlook does not do automatically. Just highlight the file path (e.g. S:\shared_file.jpg) and press the 'Quick Link' button.
+Quick link automatically creates a link from the highlighted text- useful for providing links to files on shared networks, which Outlook does not do automatically. Just highlight the filepath (e.g. S:\shared_file.jpg) and press the 'Quick Link' button.
 
 Scan Attach
 -----------
 
 Scan Attach moves and renames a file from a scanner to a new e-mail- useful for professional scanning attachments.
-To use you must haev selected the e-mail from the scanner with the pdf attachement in the Outlook Explorer (main) window. In the New Mesage composer clicking scan attach will prompt you for a file name. The file will then be copied from the scanner e-mail, renamed as instructed, and attached to the new message you're composing.
+To use it you must have selected the e-mail from the scanner (with the pdf attachment) in the Outlook Explorer (main) window. In the New Message composer clicking scan attach will prompt you for a filename. The file will then be copied from the scanner e-mail, renamed as instructed, and attached to the new message you're composing.
 
 Author and Licence
 ==================
