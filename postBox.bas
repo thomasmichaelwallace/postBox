@@ -1,16 +1,8 @@
-VERSION 1.0 CLASS
-BEGIN
-  MultiUse = -1  'True
-END
-Attribute VB_Name = "ThisOutlookSession"
-Attribute VB_GlobalNameSpace = False
-Attribute VB_Creatable = False
-Attribute VB_PredeclaredId = True
-Attribute VB_Exposed = True
-Sub LinkToWorkItem()
+Attribute VB_Name = "postBox"
+Public Sub QuickLink()
 
     'postBox - Quick Link
-    'Copyright (C) 2010-2013 Thomas Michael Wallace <http://www.thomasmichaelwallace.co.uk>
+    'Copyright (C) 2010-2014 Thomas Michael Wallace <http://www.thomasmichaelwallace.co.uk>
 
     ' This file is part of postBox.
 
@@ -29,7 +21,7 @@ Sub LinkToWorkItem()
 
     'Quick convert selected text into hyperlink
     
-    Dim editor As Inspector.WordEditor
+    Dim editor As Variant
     
     'view current e-mail as ms-word
     Set editor = ActiveInspector.WordEditor
@@ -43,10 +35,10 @@ Sub LinkToWorkItem()
         
 End Sub
 
-Sub ScanAttach()
+Public Sub ScanAttach()
 
     'postBox - Scan Attach
-    'Copyright (C) 2010-2013 Thomas Michael Wallace <http://www.thomasmichaelwallace.co.uk>
+    'Copyright (C) 2010-2014 Thomas Michael Wallace <http://www.thomasmichaelwallace.co.uk>
 
     ' This file is part of postBox.
 
@@ -113,7 +105,7 @@ Sub ScanAttach()
     
     'ask user for prefered filename
     file_name = InputBox("Attach as filename", "Scan Attacher", "attachment")
-    file_path = "C:\Temp\" & file_name & ".pdf"
+    file_path = CreateObject("WScript.Shell").SpecialFolders("Desktop") & "\" & file_name & ".pdf"
     
     'save attachement to temp
     from_attachments.Item(1).SaveAsFile file_path
@@ -125,3 +117,5 @@ Sub ScanAttach()
     Kill file_path
 
 End Sub
+
+
