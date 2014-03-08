@@ -25,7 +25,7 @@ Unfortunately Microsoft prevents Outlook Macros from easily being shared between
 * Type the path to the SelfCert.exe correct for your version:
     * Office 2013: "%ProgramFiles%\Microsoft Office\Office15\SELFCERT.EXE"
     * Office 2010: "%ProgramFiles%\Microsoft Office\Office14\SELFCERT.EXE"
-    * Office 2007L "%ProgramFiles%\Microsoft Office\Office13\SELFCERT.EXE"
+    * Office 2007: "%ProgramFiles%\Microsoft Office\Office13\SELFCERT.EXE"
     * Search Google if you can't find it; sometimes it feels like Microsoft are just making things difficult...
 * Press 'OK' to launch the Create Digital Certificate dialog.
 * Enter the certificate name as 'postBox' and press 'OK', then press 'OK' again on the successful creation message box.
@@ -53,7 +53,7 @@ Unfortunately Microsoft prevents Outlook Macros from easily being shared between
 * From the New Message Window right click on the ribbon, select 'Customize the Ribbon' (In 2007 you can only customise the Quick-Access toolbar.)
 * On the customisation dialog, use the left-hand (Choose commands from:) drop-down to select 'Macros'.
 * You can then add 'Project1.QuickLink' and 'Project1.ScanAttach' (see below for descriptions) using the 'Add >>' button.
-* If prompted you'll need to make a new group for these buttons. I reccomend keeping the 'New Mail Message' menu selected on the right-hand plane and pressing 'New Group', pressing 'Rename', and calling it 'postBox'.
+* If prompted you'll need to make a new group for these buttons. I recommend keeping the 'New Mail Message' menu selected on the right-hand plane and pressing 'New Group', pressing 'Rename', and calling it 'postBox'.
 * Use the 'Rename' button after the 'Add >>' button to choose better names and icons for the postBox commands; the decision of which, I'll leave to your good selves...
 
 Usage
@@ -62,15 +62,15 @@ Usage
 Quick Link
 ----------
 
-Quick link automatically creates a link from the highlighted text- useful for providing links to files on shared networks, which Outlook does not do automatically. Just highlight the filepath (e.g. S:\shared_file.jpg) and press the 'Quick Link' button.
+Quick link automatically creates a link from the highlighted text- useful for providing links to files on shared networks, which Outlook does not do automatically. Just highlight the file-path (e.g. S:\shared_file.jpg) and press the 'Quick Link' button.
 
 Scan Attach
 -----------
 
 Scan Attach moves and renames a file from a scanner to a new e-mail- useful for professional scanning attachments.
-To use it you must have selected the e-mail from the scanner (with the pdf attachment) in the Outlook Explorer (main) window. In the New Message composer clicking scan attach will prompt you for a filename. The file will then be copied from the scanner e-mail, renamed as instructed, and attached to the new message you're composing.
+To use it you must have selected the e-mail from the scanner (with the pdf attachment) in the Outlook Explorer (main) window. In the New Message composer clicking scan attach will prompt you for a file-name. The file will then be copied from the scanner e-mail, renamed as instructed, and attached to the new message you're composing.
 
 Author and Licence
 ==================
 
-postBox is primiarly written by Thomas Michael Wallace (www.thomasmichaelwallace.co.uk), and released under the GPL v3 licence.
+postBox is primarily written by Thomas Michael Wallace (www.thomasmichaelwallace.co.uk), and released under the GPL v3 licence.
